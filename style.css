@@ -12,6 +12,50 @@
     font-style: normal;
 }
 
+/* ===== Адаптив для экранов от 1920px ===== */
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 90%;
+        max-width: 1920px;
+    }
+}
+
+/* ===== Адаптив для экранов до 1024px ===== */
+@media screen and (max-width: 1024px) {
+    /* Контейнер на меньших экранах */
+    .container {
+        width: 90%;
+        max-width: 1024px;
+        padding: 0 20px;
+    }
+
+    .night_city {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .little_scrins {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .little_scrins img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .big_scrins_block {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 /* Общие стили и переменные */
 :root {
     --color-yellow: #F8F200;
@@ -27,9 +71,11 @@
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: var(--font-label);
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 65px;
 }
 
 .hero {
@@ -42,7 +88,10 @@ h3 {
     position: relative;
 }
 
-header {
+header,
+footer {
+    font-family: var(--font-text);
+    font-size: 18px;
     position: relative;
     z-index: 10;
     display: flex;
@@ -109,6 +158,7 @@ header {
 .yellow-box {
     position: absolute;
     top: 531px;
+    margin-right: 36px;
     right: 0;
     padding: 70px 0 0 70px;
     width: 624px;
@@ -179,7 +229,7 @@ header {
 
 .little_scrins {
     position: relative;
-    width: 460px;
+    width: 40%;
     height: 424px;
 }
 
@@ -324,6 +374,11 @@ header {
     box-shadow: none;
 }
 
+.forma input::placeholder {
+    color: #fff; /* Замените на нужный цвет */
+    opacity: 1; /* Убедитесь, что текст плейсхолдера не полупрозрачный */
+}
+
 .upload-box {
     margin-top: 30px;
     border: 0.5px dashed white;
@@ -404,4 +459,205 @@ header {
 .border_block {
     width: 100%;
     height: 70px;
+    margin-top: 70px;
 }
+
+.border_block img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Falldown block*/
+.falldown_block {
+    background-color: var(--color-yellow);
+}
+
+.falldown {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+.falldown_content,
+.monitor_and_hp {
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+
+    width: 624px;
+    margin-top: 70px;
+}
+
+.monitor {
+    width: 100%;
+    height: 430px;
+}
+
+.monitor img {
+    width: 100%;
+    height: 100%;
+}
+
+.hp {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.hp img {
+    width: 540px;
+    height: 80px;
+}
+
+.falldown p {
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    margin-top: 25px;
+}
+
+.falldown_content img {
+    width: 24px;
+    height: 24px;
+}
+
+.falldown button {
+    margin-top: 30px;
+    width: 194px;
+    padding: 15px;
+    background-color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+
+.benefit {
+    margin-top: 15px;
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+/*Buy game block*/
+.buy_game_block {
+    display: flex;
+    width: 100%;
+    color: white;
+}
+
+.buy_game_block .left_side {
+    width: 960px;
+    height: 717px;
+}
+
+.buy_game_block .right_side {
+    width: 960px;
+    height: 717px;
+    background-color: var(--color-black);
+    padding-top: 70px;
+    padding-left: 32px;
+    padding-right: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buy_game_block .right_side h2 {
+    font-size: 62px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.buy_game_block .right_side .block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 70px;
+}
+
+.buy_game_block .right_side .block p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-family: var(--font-text);
+    font-weight: 400;
+}
+
+.buy_game_block .right_side h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #308ef9;
+    font-family: var(--font-text);
+}
+
+.buy_game_block .right_side .platforms {
+    height: 133.27px;
+    width: 319px;
+}
+
+
+/*Footer*/
+.footer_logo {
+    display: flex;
+    gap: 32px;
+    height: 74px;
+}
+
+.footer_links {
+    display: flex;
+    gap: 32px;
+}
+
+.footer_links a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.product_names {
+    background-color: var(--color-black);
+    height: 40px;
+    color: white;
+    font-family: var(--font-text);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 8px;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.close {
+  position: absolute;
+  top: 5px; right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
