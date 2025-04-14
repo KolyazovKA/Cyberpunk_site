@@ -28,10 +28,10 @@ function initializeSlider(sliderSelector) {
 
 // Запускаем слайдеры после загрузки DOM
 document.addEventListener('DOMContentLoaded', () => {
-    initializeSlider('.slider_1_image');
-    initializeSlider('.slider_2_1_image');
-    initializeSlider('.slider_2_2_image');
-    initializeSlider('.slider_2_3_image');
+    initializeSlider('.slider_1');
+    initializeSlider('.slider_2_1');
+    initializeSlider('.slider_2_2');
+    initializeSlider('.slider_2_3');
 });
 
 document.addEventListener('DOMContentLoaded', () => {

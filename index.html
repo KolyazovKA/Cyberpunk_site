@@ -5,220 +5,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyberpunk</title>
-
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/site_logo.jfif" type="image/x-icon">
+    <link rel="icon" href="./images/header/logo.png" type="image/x-icon">
 </head>
 
 <body>
-<!-- Первый блок -->
-<div class="hero">
-    <div class="container">
-        <!-- Хедер -->
-        <header>
-            <div class="logo">
-                <img src="./images/header/logo.png">
-            </div>
+    <div class="header">
+        <div class="container">
+            <header>
+                <img class="header_logo" src="./images/header/logo.png" alt="logo">
 
-            <!-- Социальные сети -->
-            <div class=" social">
-                <a href="."><img class="social_icons" src="./images/header/youtube.svg" alt="youtube"></a>
-                <a href="."><img class="social_icons" src="./images/header/vk.svg" alt="vk"></a>
-                <a href="."><img class="social_icons" src="./images/header/facebook.png" alt="facebook"></a>
-                <a href="."><img class="social_icons" src="./images/header/twitter.svg" alt="twitter"></a>
-                <a href="."><img class="social_icons" src="./images/header/twich.png" alt="twich"></a>
-                <a href="."><img class="social_icons" src="./images/header/instagram_icon.png" alt="instagram"></a>
-            </div>
-        </header>
-    </div>
-
-    <!-- Слайдер -->
-    <div id="slider_1" class=" full_size_image">
-        <img class="slider_1_image" src="./images/slider_1/slider_1_3.jfif">
-        <img class=" slider_1_image" src="./images/slider_1/slider_1_2.png">
-        <img class="slider_1_image" src="./images/slider_1/slider_1_1.jfif">
-    </div>
-
-    <!-- Блок "Доступно на всех платформах" -->
-    <div class="container">
-        <div class="yellow-box">
-            <p>Доступно на всех платформах</p>
-            <button id="moreInfoBtn">Узнать больше</button>
-        </div>
-    </div>
-</div>
-
-<!-- Блок про игру -->
-<div class="night_city">
-    <div class="container">
-        <h2>Найт-Сити изменит тебя навсегда!</h2>
-        <div class="cyberpunk_description">
-                <span>
-                    <a href=".">Cyberpunk 2077</a> — приключенческая ролевая игра, действие которой происходит в
-                    мегаполисе
-                    Найт-Сити,
-                    где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках
-                    устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры
-                    своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя
-                    окружает.</span>
-        </div>
-        <div class="cyberpunk_locations">
-            <div class="little_scrins">
-                <div class="top_scrins locations_scrins">
-                    <img class="slider_2_1_image" src="images/cyberpunk_locations_slider/slider_2_1.png">
-                    <img class="slider_2_1_image" src="images/cyberpunk_locations_slider/slider_2_2.png">
-                    <img class="slider_2_1_image" src="images/cyberpunk_locations_slider/slider_2_3.png">
+                <div class="header_social">
+                    <a href="."><img src="./images/header/youtube.svg" alt="youtube"></a>
+                    <a href="."><img src="./images/header/vk.svg" alt="vk"></a>
+                    <a href="."><img src="./images/header/facebook.png" alt="facebook"></a>
+                    <a href="."><img src="./images/header/twitter.svg" alt="twitter"></a>
+                    <a href="."><img src="./images/header/twich.png" alt="twich"></a>
+                    <a href="."><img src="./images/header/instagram_icon.png" alt="instagram"></a>
                 </div>
-                <div class="bottom_scrins locations_scrins">
-                    <img class="slider_2_2_image" src="images/cyberpunk_locations_slider/slider_2_2.png">
-                    <img class="slider_2_2_image" src="images/cyberpunk_locations_slider/slider_2_3.png">
-                    <img class="slider_2_2_image" src="images/cyberpunk_locations_slider/slider_2_1.png">
-                </div>
-            </div>
-            <div class="big_scrins_block locations_scrins">
-                <div class="big_scrins">
-                    <img class="slider_2_3_image" src="images/cyberpunk_locations_slider/slider_2_3.png">
-                    <img class="slider_2_3_image" src="images/cyberpunk_locations_slider/slider_2_1.png">
-                    <img class="slider_2_3_image" src="images/cyberpunk_locations_slider/slider_2_2.png">
-                </div>
+            </header>
+        </div>
+
+        <div id="slider_1" class="full_size_image">
+            <img class="slider_1" src="./images/slider_1/slider_1_3.jfif" alt="slider_1">
+            <img class="slider_1" src="./images/slider_1/slider_1_2.png" alt="slider_1">
+            <img class="slider_1" src="./images/slider_1/slider_1_1.jfif" alt="slider_1">
+        </div>
+
+        <div class="container">
+            <div class="info_box">
+                <h2>Доступно на всех платформах</h2>
+                <button id="moreInfoBtn">Узнать больше</button>
             </div>
         </div>
     </div>
-</div>
-<div class="play_and_win">
-    <div class="border_block">
-        <img src="images/play_and_win/top_border.png">
-    </div>
 
-    <div class="container">
-        <div class="play_and_win_title">
-            <div class="sale_img">
-                <img src="images/play_and_win/sale.svg">
-            </div>
-            <h2>Играй и выигрывай!</h2>
-        </div>
-        <div class="content">
-            Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или
-            <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут
-            подведены 1 февраля. Удачи! ;)
-        </div>
-        <div class="form_and_consoles">
-            <div class="forma">
-                <form>
-                    <input type="text" id="name" name="name" placeholder="Как тебя зовут?">
-                    <input type="email" id="email" name="email" placeholder="Твой e-mail">
+    <div class="night_city">
+        <div class="container">
+            <h2>Найт-Сити изменит тебя навсегда!</h2>
+            <p class="cyberpunk_description">
+                <a href=".">Cyberpunk 2077</a> — приключенческая ролевая игра, действие которой происходит в
+                мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V,
+                наёмника в поисках
+                устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры
+                своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя
+                окружает.
+            </p>
 
-                    <div class="upload-box">
-                        <p>Прикрепить скриншот</p>
-                        <span>.png / .jpg / .pdf</span>
-                        <input type="file" accept=".png,.jpg,.jpeg,.pdf">
+            <div class="cyberpunk_locations">
+                <div class="left_scrins">
+                    <div class="top_scrin locations_scrins">
+                        <img class="slider_2_1" src="images/cyberpunk_locations_slider/slider_2_1.png" alt="slider_2_1">
+                        <img class="slider_2_1" src="images/cyberpunk_locations_slider/slider_2_2.png" alt="slider_2_1">
+                        <img class="slider_2_1" src="images/cyberpunk_locations_slider/slider_2_3.png" alt="slider_2_1">
                     </div>
-
-                    <button type="submit">Отправить</button>
-
-                    <div class="consent">
-                        <input type="checkbox" id="message-checkbox" name="message-checkbox" checked/>
-                        <label for="message-checkbox">Согласен на обработку персональных данных</label>
+                    <div class="bottom_scrin locations_scrins">
+                        <img class="slider_2_2" src="images/cyberpunk_locations_slider/slider_2_2.png" alt="slider_2_1">
+                        <img class="slider_2_2" src="images/cyberpunk_locations_slider/slider_2_3.png" alt="slider_2_1">
+                        <img class="slider_2_2" src="images/cyberpunk_locations_slider/slider_2_1.png" alt="slider_2_1">
                     </div>
-                </form>
-            </div>
-            <div class="consoles">
-                <img src="images/play_and_win/sony_and_xbox.png">
+                </div>
+                <div class="right_scrins_block locations_scrins">
+                    <div class="right_scrins">
+                        <img class="slider_2_3" src="images/cyberpunk_locations_slider/slider_2_3.png" alt="slider_2_1">
+                        <img class="slider_2_3" src="images/cyberpunk_locations_slider/slider_2_1.png" alt="slider_2_1">
+                        <img class="slider_2_3" src="images/cyberpunk_locations_slider/slider_2_2.png" alt="slider_2_1">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="border_block">
-        <img src="images/play_and_win/bottom_border.png">
-    </div>
-</div>
-<div class="falldown_block">
-    <div class="container">
-        <div class="falldown">
-            <div class="monitor_and_hp">
-                <div class="monitor">
-                    <img src="images/falldown/monitor.png">
+
+    <img class="play_and_win_img" src="./images/play_and_win/top_border.png">
+    <div class="play_and_win">
+        <div class="container">
+            <div>
+                <div class="play_game">
+                    <img class="sale_1" src="images/play_and_win/sale.svg" alt="sale_1">
+                    <div class="item">
+                        <img src="images/play_and_win/xbox.png" alt="sony">
+                        <img src="images/play_and_win/sony.png" alt="sony">
+                    </div>
                 </div>
-                <div class="hp">
-                    <img src="images/falldown/hp_and_cuberpunk.png">
+                <div class="item">
+                    <img class="sale_2" src="images/play_and_win/sale.svg" alt="sale">
+                    <h2>Играй и выигрывай!</h2>
+                </div>
+                <p class="play_and_win_description">
+                    Играй в <a href=".">Cyberpunk 2077</a> и получи возможность выиграть консоль <a href=".">Xbox Series
+                        X</a> или <a href=".">Sony PlayStation 5</a>!
+                    Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля.
+                    Удачи! ;)
+                </p>
+                <div class="item">
+                    <form class="message_form">
+                        <input type="text" id="name" name="name" placeholder="Как тебя зовут?">
+                        <input type="email" id="email" name="email" placeholder="Твой e-mail">
+                        <div class="upload_box">
+                            <p class="upload_text">Прикрепить скриншот</p>
+                            <span class="file_extension">.png / .jpg / .pdf</span>
+                            <input type="file" accept=".png,.jpg,.jpeg,.pdf">
+                        </div>
+                        <button>Отправить</button>
+                        <div class="consent">
+                            <input type="checkbox" id="message-checkbox" name="message-checkbox" checked />
+                            <label for="message-checkbox">Согласен на обработку персональных данных</label>
+                        </div>
+                    </form>
+                    <img class="horizontal_picture" src="images/play_and_win/sony_and_xbox.png">
                 </div>
             </div>
-            <div class="falldown_content">
-                <h2>Полное погружение вместе с HP</h2>
-                <p>Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8
-                    дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события
-                    с временем отклика 1 мс и частотой в 144 Гц!</p>
-                <div class="benefit_falldown_content">
-                    <p class="benefit">
-                        <img src="images/falldown/color_lens_icon.svg">
-                        <span>Яркие насыщенные цвета</span>
-                    </p>
-                    <p class="benefit">
-                        <img src="images/falldown/cristal_icon.png">
-                        <span>Кристальная четкость изображения</span>
-                    </p>
-                    <p class="benefit">
-                        <img src="images/falldown/fast_move_icon.svg">
-                        <span>Быстрые движения и плавный геймплей</span>
-                    </p>
+            <img class="vertical_picture" src="images/play_and_win/vert_sony_and_xbox.png">
+        </div>
+    </div>
+    <img class="play_and_win_img" src="./images/play_and_win/bottom_border.png">
+
+    <div class="falldown_block">
+        <div class="container">
+            <div class="falldown">
+                <div class="left_side">
+                    <img class="monitor" src="./images/falldown/monitor.png" alt="monitor">
+                    <div class="hp">
+                        <img class="picture_1" src="./images/falldown/hp.png" alt="hp">
+                        <img class="picture_2" src="./images/falldown/x.png" alt="X">
+                        <img class="picture_3" src="./images/header/logo.png" alt="cyberpunk">
+                    </div>
+                </div>
+                <div class="right_side">
+                    <h2>Полное погружение вместе с HP</h2>
+                    <p>Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю
+                        23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на
+                        любые события с временем отклика 1 мс и частотой в 144 Гц!</p>
+                    <div class="block">
+                        <p>
+                            <img src="./images/falldown/color_lens_icon.svg" alt="color">
+                            <span>Яркие насыщенные цвета</span>
+                        </p>
+                        <p>
+                            <img src="./images/falldown/cristal_icon.png" alt="cristal">
+                            <span>Кристальная четкость изображения</span>
+                        </p>
+                        <p>
+                            <img src="./images/falldown/fast_move_icon.svg" alt="fastmove">
+                            <span>Быстрые движения и плавный геймплей</span>
+                        </p>
+                    </div>
                     <button>Подробнее</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="buy_game_block">
-    <img class="left_side" src="./images/buy_game/disks.jpg">
-    <div class="right_side">
-        <h2>Купить игру Cyberpunk 2077</h2>
-        <div class="block">
-            <h3>В комплект входит:</h3>
-            <p>
-                <img src="./images/buy_game/disk_icon.svg">
-                <span>Футляр с игровыми дисками</span>
-            </p>
-            <p>
-                <img src="./images/buy_game/wysiwyg_icon.svg">
-                <span>Футляр с кодом для загрузки игры и дисками (pc)</span>
-            </p>
-            <p>
-                <img src="./images/buy_game/cartoon_icon.svg">
-                <span>Справочник с информацией об игровом мире</span>
-            </p>
-        </div>
-        <div class="block">
-            <h3>Выберите платформу:</h3>
-            <img class="platforms" src="./images/buy_game/platforms.png">
+
+    <div class="buy_game">
+        <img class="left_side" src="./images/buy_game/disks.jpg">
+        <div class="right_side">
+            <h2>Купить игру Cyberpunk 2077</h2>
+            <div class="block">
+                <h3>В комплект входит:</h3>
+                <p>
+                    <img src="./images/buy_game/disk_icon.svg" alt="buy_game_2">
+                    <span>Футляр с игровыми дисками</span>
+                </p>
+                <p>
+                    <img src="./images/buy_game/cartoon_icon.svg" alt="buy_game_3">
+                    <span>Футляр с кодом для загрузки игры и дисками (pc)</span>
+                </p>
+                <p>
+                    <img src="./images/buy_game/wysiwyg_icon.svg" alt="buy_game_4">
+                    <span>Справочник с информацией об игровом мире</span>
+                </p>
+            </div>
+            <div class="block">
+                <h3>Выберите платформу:</h3>
+                <img class="platforms" src="./images/buy_game/platforms.png" alt="platforms">
+            </div>
         </div>
     </div>
-</div>
 
-<div class="footer">
-    <div class="container">
-        <footer>
-            <div class="footer_logo">
-                <img src="./images/header/logo.png">
-                <img src="./images/footer/CD_Projekt_logo%201.svg">
-            </div>
+    <div class="footer">
+        <div class="container">
+            <footer>
+                <div class="footer_logo">
+                    <img class="picture_1" src="./images/header/logo.png" alt="picture_1">
+                    <img class="picture_2" src="./images/footer/CD_Projekt_logo 1.svg" alt="picture_2">
+                </div>
 
-            <div class="footer_links">
-                <button>Лицензия</button>
-                <button id="privacyPolicyBtn">Политика конфиденциальности</button>
-            </div>
-        </footer>
+                <div class="footer_links">
+                    <a href=".">Лицензия</a>
+                    <button id="privacyPolicyBtn">Политика конфиденциальности</button>
+                </div>
+            </footer>
+        </div>
     </div>
-</div>
-<div class="product_names">
-    <p>CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</p>
-</div>
 
-<div id="modal" class="modal" style="display:none;">
-  <div class="modal-content">
-    <span id="closeModal" class="close">&times;</span>
-    <div id="modalText">Текст по умолчанию</div>
-  </div>
-</div>
+    <p class="sign">CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</p>
 
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div id="modalText">Текст по умолчанию</div>
+        </div>
+    </div>
 </body>
-<script src="js/sliders.js"></script>
+<script src="./js/sliders.js"></script>
 
 </html>
